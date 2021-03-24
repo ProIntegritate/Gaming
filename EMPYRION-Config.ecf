@@ -1,4 +1,4 @@
-# Save this file as "config.ecf" at "G:\STEAM\steamapps\common\Empyrion - Galactic Survival\Content\Configuration"
+# Save this file as "config.ecf" under "\STEAM\steamapps\common\Empyrion - Galactic Survival\Content\Configuration\"
 #
 # Changes:
 # -> New galaxy conf, way larger (4000 LY) and lots more stars (30-40k) + more nebula
@@ -6,11 +6,13 @@
 # -> Increased range for warpdrives
 # -> Some more shield power added
 # -> Enableing ship weapons on the planet
+# -> Increased range for detectors
 # -> Upping stack count for many items
 # -> Trying to change stack size for refined pentaxid, not working, Eleon changed IDs outside of conf file?
 # -> People walking around with change in their pocket? Not anymore
 # -> SolarGenerator, more capacity
 # -> Solar panels up maxcount to 80, 15 is a little bit... crap
+# -> CPU limits upped: 1->8, 2->16, 3->32
 
 VERSION: 9
 
@@ -44,6 +46,7 @@ VERSION: 9
   RangeAU: 50, display: true
   RangeLY: 12, display: true
 }
+
 
 # Some more shield power added
 { Block Id: 1808, Name: ShieldGeneratorBA
@@ -116,6 +119,9 @@ VERSION: 9
     MaxCount: 500, type: int, display: true
   }
 }
+
+
+# Increased range for detectors
 { Item Id: 4802, Name: DetectorCVWeapon
   Category: Weapons/Items
   {
@@ -177,7 +183,7 @@ VERSION: 9
 }
 
 
-# Solar panels up maxcount to 80, 15 is a little bit... crap
+# Large solar panels more efficient and all types up maxcount to 80, just 15 is a little bit... crap
 { Block Id: 1494, Name: SolarPanelBlocks
   SolarPanelEfficiency: 2.5, display: true
   MaxCount: 80, type: int, display: true
@@ -195,3 +201,39 @@ VERSION: 9
   MaxCount: 80, type: int, display: true
 }
 
+{ Block Id: 2023, Name: CPUExtenderHVT2
+  MaxCount: 8, type: int, display: true
+}
+{ Block Id: 2024, Name: CPUExtenderHVT3
+  MaxCount: 16, type: int, display: true
+}
+{ Block Id: 2025, Name: CPUExtenderHVT4, Ref: CPUExtenderHVT3
+  MaxCount: 32, type: int, display: true
+}
+{ Block Id: 2026, Name: CPUExtenderSVT2
+  MaxCount: 8, type: int, display: true
+}
+{ Block Id: 2027, Name: CPUExtenderSVT3
+  MaxCount: 16, type: int, display: true
+}
+{ Block Id: 2028, Name: CPUExtenderSVT4, Ref: CPUExtenderSVT3
+  MaxCount: 32, type: int, display: true
+}
+{ Block Id: 2029, Name: CPUExtenderCVT2
+  MaxCount: 8, type: int, display: true
+}
+{ Block Id: 2030, Name: CPUExtenderCVT3
+  MaxCount: 16, type: int, display: true
+}
+{ Block Id: 2031, Name: CPUExtenderCVT4, Ref: CPUExtenderCVT3
+  MaxCount: 32, type: int, display: true
+}
+{ Block Id: 2032, Name: CPUExtenderBAT2
+  MaxCount: 8, type: int, display: true
+}
+{ Block Id: 2033, Name: CPUExtenderBAT3
+  MaxCount: 16, type: int, display: true
+}
+{ Block Id: 2034, Name: CPUExtenderBAT4, Ref: CPUExtenderBAT3
+  MaxCount: 32, type: int, display: true
+}
