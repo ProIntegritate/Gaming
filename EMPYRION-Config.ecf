@@ -11,7 +11,7 @@
 # -> Trying to change stack size for refined pentaxid, not working, Eleon changed IDs outside of conf file?
 # -> People walking around with change in their pocket? Not anymore
 # -> SolarGenerator, more capacity
-# -> Solar panels up maxcount to 80, 15 is a little bit... crap
+# -> Solar panels up maxcount to 80, 15 is a little bit... crap, also Large panels efficiency from 1.8 to 2.5
 # -> CPU limits upped: 1->8, 2->16, 3->32
 
 VERSION: 9
