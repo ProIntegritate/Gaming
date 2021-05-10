@@ -5,7 +5,7 @@
 # -> Teleporters to 50 LY range
 # -> Increased range for warpdrives
 # -> Some more shield power added
-# -> Enableing ship weapons on the planet
+# -> Enableing ship weapons on the planet and upping maxcount for each type.
 # -> Increased range for detectors
 # -> Upping stack count for many items
 # -> Trying to change stack size for refined pentaxid, not working, Eleon changed IDs outside of conf file?
@@ -13,10 +13,14 @@
 # -> SolarGenerator, more capacity
 # -> Solar panels up maxcount to 80, 15 is a little bit... crap, also Large panels efficiency from 1.8 to 2.5
 # -> CPU limits upped: 1->8, 2->16, 3->32
+# -> Drills have more range and damage
+
 
 VERSION: 9
 
+# ----------------------------------------------------------------------------------------------------
 # New galaxy conf, way larger and lots more stars + nebula
+# ----------------------------------------------------------------------------------------------------
 { GalaxyConfig, Name: General
   StarCount: "30000, 40000"                  # random value between these two
   Radius: "0, 4000"                           # inner and outer radius of galaxy in LY (no random!)
@@ -24,7 +28,9 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Teleporters to 50 LY range
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 1315, Name: TeleporterCV
   RangeLY: 50
 }
@@ -33,7 +39,9 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Increased range for warpdrives
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 720, Name: WarpDrive
   CostPerAU: 0.1, display: true
   CostPerLY: 1, display: true
@@ -48,7 +56,9 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Some more shield power added
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 1808, Name: ShieldGeneratorBA
   ShieldCapacity: 60000, type: int, display: true
   ShieldRecharge: 150, type: int, display: true
@@ -63,13 +73,17 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Increased amount of Pentaxid tanks if you wanna go that way.
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 336, Name: PentaxidTank
   MaxCount: 64, type: int, display: true
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Enableing ship weapons on the planet
+# ----------------------------------------------------------------------------------------------------
 { Item Id: 4206, Name: RocketLauncherMSWeapon
   Category: Weapons/Items
   {
@@ -121,31 +135,35 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Increased range for detectors
+# ----------------------------------------------------------------------------------------------------
 { Item Id: 4802, Name: DetectorCVWeapon
   Category: Weapons/Items
   {
-    Range: 16000
-    RangeSpace: 50000
+    Range: 32000
+    RangeSpace: 100000
   }
 }
 { Item Id: 4800, Name: DetectorHVWeapon
   Category: Weapons/Items
   {
-    Range: 12500
-    RangeSpace: 24000
+    Range: 32000
+    RangeSpace: 100000
   }
 }
 { Item Id: 4801, Name: DetectorSVWeapon
   Category: Weapons/Items
   {
-    Range: 12500
-    RangeSpace: 24000
+    Range: 32000
+    RangeSpace: 100000
   }
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Upping stack count for many items
+# ----------------------------------------------------------------------------------------------------
 { +Item Id: 198, Name: OreTemplate
   StackSize: 9999
 }
@@ -157,7 +175,9 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Trying to change stack size for refined pentaxid, not working, Eleon changed IDs outside of conf file?
+# ----------------------------------------------------------------------------------------------------
 { +Item Id: 246, Name: PentaxidCrystal, Ref: ComponentsTemplate
   StackSize: 1000
 }
@@ -169,21 +189,27 @@ VERSION: 9
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # People walking around with change in their pocket? Not anymore
+# ----------------------------------------------------------------------------------------------------
 { +LootGroup Name: LootMoneyCard
   Count: 1
   Item_0: MoneyCard, param1: "2000,10000", param2: 0.5
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # SolarGenerator, more capacity
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 1495, Name: SolarGenerator
   FuelCapacity: 5000, type: int, display: true
   EnergyOut: 10000, type: int, display: false, formatter: Watt
 }
 
 
+# ----------------------------------------------------------------------------------------------------
 # Large solar panels more efficient and all types up maxcount to 80, just 15 is a little bit... crap
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 1494, Name: SolarPanelBlocks
   SolarPanelEfficiency: 2.5, display: true
   MaxCount: 80, type: int, display: true
@@ -201,6 +227,10 @@ VERSION: 9
   MaxCount: 80, type: int, display: true
 }
 
+
+# ----------------------------------------------------------------------------------------------------
+# -> CPU limits upped: 1->8, 2->16, 3->32
+# ----------------------------------------------------------------------------------------------------
 { Block Id: 2023, Name: CPUExtenderHVT2
   MaxCount: 8, type: int, display: true
 }
@@ -236,4 +266,51 @@ VERSION: 9
 }
 { Block Id: 2034, Name: CPUExtenderBAT4, Ref: CPUExtenderBAT3
   MaxCount: 32, type: int, display: true
+}
+
+
+# ----------------------------------------------------------------------------------------------------
+# Drills have more range and damage 
+# ----------------------------------------------------------------------------------------------------
+{ +Item Id: 8, Name: Drill
+  { Child 0       # Resource mining and Rock drilling 
+    Damage: 900
+    Radius: 8
+    Range: 15, display: true
+  }
+}
+
+{ +Item Id: 19, Name: DrillT2
+  { Child 0
+    Damage: 1800
+    Radius: 8
+    Range: 21, display: true
+  }
+  { Child 1
+    Damage: 105
+    Radius: 8
+    Range: 15, display: true
+  }
+  { Child 2
+    Damage: 1500
+    Radius: 16
+    Range: 15, display: true
+  }
+  { Child 3
+    Damage: 90
+    Radius: 16
+  }
+}
+
+{ +Item Id: 40, Name: DrillEpic, Ref: DrillT2   
+  { Child 0   # Resource Mining 
+    Damage: 2250
+    Radius: 8
+    Range: 21, display: true
+  }
+  { Child 2   # Flattening
+    Damage: 4500
+    Radius: 16
+    Range: 18, display: true
+  }
 }
