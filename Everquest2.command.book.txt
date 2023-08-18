@@ -1,0 +1,358 @@
+                   ***** EVERQUEST 2 *****
+
+   -= SERVER COMMAND LINE GUIDE = -
+
+                                By Yennie
+
+                            Sixth edition.
+                           (2017 - Jul - 10)
+
+
+If you want a copy of this manual, please contact the author and  have a notebook available  to copy too.
+
+If you do not have a notebook, contact a scribe  or buy one  from the broker as i cannot provide that myself.
+
+
+
+
+---- * ABILITY * ----
+
+/useability {ability}
+/useabilityonplayer {player} {ability}
+/useabilityonmerc {player} {ability}
+/useabilityonmerc {merc} {ability}
+/useabilityonrt {ability}
+/cancel_spellcast
+/clearabilityqueue
+/clearallqueuedabilities
+/cl
+/cancel_maintained {maintained ability}
+
+
+
+---- * MAIL * ----
+
+/start_mail
+/clear_mailbox (Perma clear mailbox!)
+
+
+
+---- * COMBAT * ----
+
+/autoattack 0   - Stops all
+/autoattack 1   - Melee on
+/autoattack 2   - Ranged on
+/setauto 0   - Style "Automatic"
+/setauto 1   - Style "Forced Melee"
+/setauto 2   - Style "Forced Ranged/Spell"
+/setauto 3   - Style "off".
+/toggleautoattack
+/togglerangedattack
+/togglethreatlistwindow
+
+/combat_filter 0   - None
+/combat_filter 1   - Self
+/combat_filter 2   - Group
+/combat_filter 3   - Raid
+
+!! Combat filters  are not zone persistant !!
+
+
+
+---- * PETS * ----
+
+/pet backoff
+/pet preserve_self
+/pet preserve_master
+/pet attack
+/pet stayhere
+/pet followme
+/pet getlost
+/pet hide
+/pet melee
+/pet ranged
+/petname {name}
+/petoptions
+/togglepet
+
+
+
+
+
+
+
+---- * MERCS * ----
+
+/merc ranged
+/merc melee
+/merc resume
+/merc attack
+/merc backoff
+/mercname {name}
+/togglemerc
+/cl_ignore_merc_chatter {true/false}
+
+
+---- * SOCIAL * ----
+
+/friends {name}
+/friend_add {name}
+/friend_remove {name}
+/ignores {name}
+/ignore_add {name}
+/ignore_remove {name}
+/save_friends {.txt file name}
+/load_friends
+---- * CHAT * ----
+
+/say
+/shout
+/tell
+Channels /1 /2 /3 (etc)
+/auction
+/ventsay 
+/filter
+/ignore <name>
+/ooc <message>
+/auction <message>
+/ventsay <message>
+/whochannel <nr>   /wc <nr>
+/chatwho <name>
+/channellist
+/clearchattab 
+/clearchat 
+/setchannelnumber <from nr> <to nr>
+/leavechannel <nr>
+/chatleave <name>
+/leaveall
+---- * WHO * ----
+
+/who 
+/who {name}
+/who {class}
+/who {race}
+/who {level}
+/who {low level} {high level}
+/who {alignment}
+/who {player tag}
+/who friend
+/who guild
+/who GM
+/who Guide
+/who all
+/who all guild 
+
+
+
+
+
+
+---- * GUILD * ----
+
+/guild create {name}
+/guild invite {name}
+/guild kick {name}
+/guild promote {name}
+/guild demote {name}
+/guild motd {message}
+/guildsay {message}
+/gu {message}
+/officersay {message}
+/os {message}
+/of {message}
+
+
+
+
+
+
+
+
+
+---- * GROUP & RAID * ----
+
+/gsay {message}
+/raidsay {message}
+/whogroup
+/whoraid
+/invite
+/leave  /disband
+/makeleader
+/kickfromraid 
+/mentor <playername>
+/unmentor 
+/follow
+/whogroup
+
+
+
+
+
+
+
+
+---- * TARGETING * ----
+
+/target {name}
+/target_self
+/target_previous
+/target_pet
+/target_group_member {#}
+/target_group_pet {#}
+/assist {name}
+/target_merc
+/target_nearest_npc
+/target_next_npc
+/target_prev_npc
+/target_none
+/targetpc {name}
+/whotarget
+/whot {target}
+/tagtarget 
+/lock
+
+
+
+---- * NAVIGATION * ----
+
+/loc
+/loc clipboard
+/waypoint
+/way <x y x>
+/waypoint_cancel
+
+
+
+---- * STATS * ----
+
+/played
+/show_account_features
+/weaponstats
+/dynamicdata
+/dynamicdata stats.ability_mod
+/get_coins
+/showlanguages
+/log
+
+
+---- * LOGIN * ----
+
+/camp {character}
+/camp desktop
+/camp login
+/exit  /quit desktop
+/camp {server}.{character} 
+
+
+
+---- * APPERANCE * ----
+
+/showhood
+/showhelm
+/showranged
+/hide_illusions /hi
+/showcloak
+/suspend_mount_mode N   - Always show
+/suspend_mount_mode 1   - Hide combat
+/suspend_mount_mode 2   - Always hide
+/toggletorch
+
+---- * MISC * ----
+
+/petition
+/claim
+/help
+/soga_models
+/cutemode
+/pizza
+/browser www.example.net
+/camera_recenter 
+/show_window
+/motd
+/medals_show_all
+/welcome_info
+/afk
+/feedback
+/typo
+/donate
+/namingpolicy
+/toggleminimap
+
+
+---- * UI * ----
+/loadui
+/load_uisettings
+/save_uisettings
+/load_uisettings {name}.dat
+/save_uisettings {name}.xml
+/research <shows research>
+
+
+---- * AA * ----
+/get_aa_xml         (saves)
+/load_aa_xml
+/respec
+
+
+---- * Sound * ----
+/master_volume 0
+/master_volume 100
+/music_volume 0
+/music_volume 100
+
+
+---- * DEITY POINTS * ----
+
+Potency:
+  /spend_deity_point 2951281460 1
+
+Crit Bonus:
+  /spend_deity_point 2479066486 1
+
+Stamina: /spend_deity_point 958976882 1 
+
+Mantle of the Prime Healer:
+  /spend_deity_point 488052651 1
+
+Embodiment of Truth:
+  /spend_deity_point 2216576529 1
+
+Grace of Tranquility:
+  /spend_deity_point 4078532231 1
+
+Life Shield:
+  /spend_deity_point 1836966692 1
+
+Mark of the Huntress:
+  /spend_deity_point 444257202 1 
+
+Judication:
+  /spend_deity_point 2282608707 1
+
+Power of the Storm:
+  /spend_deity_point 285510137 1
+
+Trickster's Mockery:
+  /spend_deity_point 1711520111 1
+
+Strength of the Heartstone:
+  /spend_deity_point 4167511244 1
+
+Flames of Anguish:
+  /spend_deity_point 2405440602 1 
+
+Anashti's Reaping:
+  /spend_deity_point 374820151 1
+
+
+Plaguebringer's Curse:
+  /spend_deity_point 2405309581 1
+
+Erosion of Will:
+  /spend_deity_point 4166593563 1
+
+Devastation of War:
+  /spend_deity_point 1715321272 1
+
+Hate's Resolve:
+  /spend_deity_point 289048878 1 
