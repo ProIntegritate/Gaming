@@ -1,5 +1,6 @@
 @echo off
 rem This requires 7zip somewhere in %PATH%. Either that or write the full path to 7Zip in this script.
+rem Change the "cd Modtest" and "cd Modtest_player" lines below to the name of the server game you want to backup.
 echo ------------------------------------------------------------
 echo Backing up: "Modtest" server savegame folder...
 echo ------------------------------------------------------------
