@@ -1,4 +1,5 @@
 @echo off
+rem This requires 7zip somewhere in %PATH%. Either that or write the full path to 7Zip in this script.
 echo ------------------------------------------------------------
 echo Backing up: "Modtest" server savegame folder...
 echo ------------------------------------------------------------
