@@ -3,6 +3,7 @@ rem Change the next line to the name of your server game name.
 set SERVERGAMENAME=Mainserver
 rem This script also requires 7zip somewhere in %PATH%.
 rem Either that or write the full path to 7Zip in this script.
+
 echo ------------------------------------------------------------
 echo Backing up: "%SERVERGAMENAME%" server savegame folder...
 echo ------------------------------------------------------------
