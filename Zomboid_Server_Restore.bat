@@ -1,7 +1,7 @@
 @echo off
 cls
 rem Change the next line to the name of your server game name.
-set SERVERGAMENAME=MyServerGameName
+set SERVERGAMENAME=MyServerSaveGame
 rem This script also requires 7zip somewhere in %PATH%.
 rem Either that or write the full path to 7Zip in this script.
 
