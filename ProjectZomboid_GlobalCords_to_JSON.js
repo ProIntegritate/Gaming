@@ -1,6 +1,6 @@
-//JS Script to convert Project Zomboid Global X, Y, Z coordinates into
+//JS Script to convert Project Zomboid Global X, Y, Z coordinates into a JSON structure.
 
-// Ebter your coordinates below:
+// Enter your coordinates below:
 var x = 12773;
 var y = 1289;
 var z = 3812;
