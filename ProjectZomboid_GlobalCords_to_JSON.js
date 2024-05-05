@@ -19,4 +19,5 @@ console.log("Local Y = " + localy);
 console.log("Height Z = " + z);
 console.log("");
 console.log("-> Proper start location JSON entity:")
-console.log("{ worldX = " + cellx + ", worldY = " + celly + ", posX = " + localx + ", posY = " + localy + ", posZ = " + z + " },")
+console.log("{ worldX = " + cellx + ", worldY = " + celly + ", posX = " + localx + ", posY = " + localy + ", posZ = " + z + " },");
+
