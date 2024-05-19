@@ -29,7 +29,7 @@
 	-- ******** Write (append) content to disk ********
 	local sFilename = "log.txt";  -- Writes file to %USERPROFILE%\Zomboid\Lua\test.txt
 	local writer = getFileWriter(sFilename, true, true);
-	getFileWriter([string] filename, [bool] createIfNotExists, [bool] append)
+	-- getFileWriter([string] filename, [bool] createIfNotExists, [bool] append)
 	writer:write("This is some data i want to save.");
 	writer:write("\n"); -- NOTE: Line breaks are NOT added to output, added manually.
 	writer:close();
