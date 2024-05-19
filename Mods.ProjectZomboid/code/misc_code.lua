@@ -22,8 +22,8 @@
 
 
 	-- ******** Convert Integer value to string ********
-  local i = 4;
-  local stringValueOfFour = tostring(i);
+  	local i = 4;
+  	local stringValueOfFour = tostring(i);
 
 
 	-- ******** Write (append) content to disk ********
@@ -33,6 +33,21 @@
 	writer:write("This is some data i want to save.");
 	writer:write("\n"); -- NOTE: Line breaks are NOT added to output, added manually.
 	writer:close();
+
+
+	-- ******** How to get Date and Time values ********
+	-- Date
+	local year = GameTime:getInstance():getYear();
+	local month = GameTime:getInstance():getMonth() + 1;	-- Compensate for couting from zero
+	local day = GameTime:getInstance():getDay() + 1;	-- Compensate for couting from zero
+
+	-- Time
+	local hour = GameTime:getInstance():getHour();
+	local minute = GameTime:getInstance():getMinutes();
+	
+	-- Meta
+	local dawn = GameTime:getInstance():getDawn();		-- Dawn hour, seem to be 12 (?)
+	local dusk = GameTime:getInstance():getDusk();		-- Dush hour, seem to be 3 (?)
 
 
 	-- ******** Add an item to the players inventory ********
