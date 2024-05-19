@@ -1,0 +1,62 @@
+-- Write RecMedia entities like the one below into a lua file in your modfolder,
+-- example ..\media\lua\shared\RecordedMedia\Somefilename.lua
+
+
+		RecMedia["Unique Identifyer of the video object"] = {
+			itemDisplayName = "Displayed ingame",
+			title = "Title of video",
+			subtitle = nil, -- I really don't know what this does.
+			author = "Author shown on video",
+			extra = "Category",
+			spawning = 0, -- I really don't know what this does.
+			category = "Retail-VHS",
+			lines = {
+				{ text = "A video line. Decrease boredom.", r = 0.9, g = 0.6, b = 0.0, codes = "BOR-1" },
+			        { text = "Another line. Increase boredom.", r = 0.6, g = 0.9, b = 0.0, codes = "BOR+1" },
+		        	{ text = "Learns a recipy.", r = 0.2, g = 0.9, b = 0.3, codes = "RCP=RecipyName" },
+
+			},
+		};
+
+    --... the next video, and so on...
+		RecMedia["Unique Identifyer of the video object"] = { --... yada yada yada...
+
+
+  	-- Text lines explained: 
+  	-- text = each line. Can use \n to add line breaks, but it is better to have short texts
+	-- r, g, b are color values for the line to be displayed in
+	-- BOR-1 = one decrease of boredom. PAN+1 = +1 Panic. AIM+1 Increase Aim skill by 1 point. see codes list below:
+
+	--	[Skills]
+	--		CRP : Carpentry
+	--		COO : Cooking
+	--		FRM : Farming
+	--		DOC : FirstAid
+	--		ELC : Electrical
+	--		MTL : Metalworking
+	--		MEC : Mechanics
+	--		TAI : Tailoring
+	--		FIS : Fishing
+	--		TRA : Trapping
+	--		FOR : Foraging
+	--	[Recipes]
+	--		RCP : GainRecipes
+	--	[Weapons]
+	--		BAA : Axe
+	--		BUA : Long Blunt
+	--		SBU : Short Blunt
+	--		LBA : Long Blade
+	--		SBA : Short Blade
+	--		SPE : Spear
+	--		AIM : Aiming
+	--		REL : Reloading
+	--	[Agilities]
+	--		SPR : Sprinting
+	--		LFT : Lightfooted
+	--		NIM : Nimble
+	--		SNE : Sneaking
+	--	[Moodles] -> ignore
+	--		BOR : Boredom
+	--		FAT : Fatigue
+	--		PAN : Panic
+	--		STS : Stress
