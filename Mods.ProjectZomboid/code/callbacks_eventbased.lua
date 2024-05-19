@@ -21,7 +21,7 @@ local function fOnHitZombie()
 end
 
 local function fNewHouse() 
-	-- OnSeeNewRoom triggers (Several times) when the player sees a new house, NOT when entering a room!
+	-- OnSeeNewRoom triggers (Several times) when the player sees a new house up close, NOT when entering a room!
 end
 
 Events.OnPlayerUpdate.Add(fOnPlayerUpdate)
