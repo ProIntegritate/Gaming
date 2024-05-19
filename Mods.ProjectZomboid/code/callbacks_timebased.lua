@@ -1,4 +1,4 @@
-# A list of time specific triggered callbacks.
+-- A list of time specific triggered callbacks.
 
 local function fDaily()
 	-- This will trigger daily.
