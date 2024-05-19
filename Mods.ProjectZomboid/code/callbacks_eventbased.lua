@@ -1,3 +1,5 @@
+-- A list of event specific callbacks.
+
 local function fOnPlayerUpdate()
 	-- This triggers CONSTANTLY, so be careful !!!
 end
