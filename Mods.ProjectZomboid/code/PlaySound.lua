@@ -18,6 +18,9 @@ local function fPlaySound()
 		--		}
 		--	}
 
+		-- You can add multiple clip {} entities to the specific sound to make one
+		-- of them play randomly if you want some variation
+
 	-- 3. Now you can use Playsound to play sounds using SoundManager:
 	-- getSoundManager():PlaySound("TestSound", false, 0);
 
