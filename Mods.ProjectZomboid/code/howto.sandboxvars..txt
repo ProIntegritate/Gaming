@@ -27,11 +27,11 @@ ________________________________________________________________________________
 
 	    Sandbox_MySandboxVars = "Sandbox Variables test",
 
-	    Sandbox_MySandboxVars_Enabled = "Boolean value",
-	    Sandbox_MySandboxVars_Enabled_tooltip = "To check or not to check",
+	    Sandbox_Enabled = "Boolean value",
+	    Sandbox_Enabled_tooltip = "To check or not to check",
 
-	    Sandbox_MySandboxVars_MaxDistance = "An integer value",
-	    Sandbox_MySandboxVars_MaxDistance_tooltip = "Enter a number between 1 and 1000",
+	    Sandbox_MaxDistance = "An integer value",
+	    Sandbox_MaxDistance_tooltip = "Enter a number between 1 and 1000",
 
 	}
 ________________________________________________________________________________________________________________________
