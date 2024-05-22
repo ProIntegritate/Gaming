@@ -1,5 +1,5 @@
 ________________________________________________________________________________________________________________________
-FILE: ..\media\sandbox-options.txt
+1. Save content below to FILE: ..\media\sandbox-options.txt
 
 	VERSION = 1,
 
@@ -21,7 +21,7 @@ FILE: ..\media\sandbox-options.txt
 		translation = MaxDistance_tooltip,
 	}
 ________________________________________________________________________________________________________________________
-FILE: ..\media\lua\shared\Translate\EN\sandbox_EN.txt
+2. Save content below to FILE: ..\media\lua\shared\Translate\EN\sandbox_EN.txt
 
 	Sandbox_EN = {
 
@@ -35,8 +35,7 @@ FILE: ..\media\lua\shared\Translate\EN\sandbox_EN.txt
 
 	}
 ________________________________________________________________________________________________________________________
-
-FILE: ..\media\lua\client\ClientsideStuff.lua
+3. Save content below to FILE: ..\media\lua\client\ClientsideStuff.lua
 
 	local function fShowSandboxVars()
 
@@ -53,4 +52,4 @@ FILE: ..\media\lua\client\ClientsideStuff.lua
 	Events.EveryOneMinute.Add(fShowSandboxVars);
 	Events.OnPlayerMove.Add(fShowSandboxVars);
 ________________________________________________________________________________________________________________________
-
+4. Modify the files how you want to, then it should look something like what is shown in pz.sandboxvars.png
