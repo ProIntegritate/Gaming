@@ -9,6 +9,7 @@
 
 	-- ******** Show text on screen (above character) ********
 	getPlayer():addLineChatElement("Hello world!", 0.6 , 0.7 , 0.1); -- text + r g b values
+	character:Say("This statement is said by the character"); -- This is for clientside mods
 
 
 	-- ******** Get Player position in world ********
@@ -53,4 +54,26 @@
 	-- ******** Add an item to the players inventory ********
 	local inventory = getPlayer():getInventory();
 	inventory:AddItem("Base.Crowbar");
+
+
+	-- ******** exit the function using return ********
+	if something == "bad" then
+		return
+	end
+
+
+	-- ******** disable entire luascript file if clientside ********
+	-- This should be put on the first line in the luascript file.	
+	-- The reverse also works if you want to check for server.
+	-- You just need one of these statements, so this is for demo purposes only.
+	if not isServer() or isClient() then return end
+
+
+	-- ******** Check if a variable is NOT like something ********
+	-- if A != 0    or   if A == NOT 0   <- Stuff like this do not work.
+	if intVar ~= 0 then
+		-- This code will run if intVar is everything but 0.
+	end
+	-- you could do if A > 0 and A < 0, but that is just silly.
+
 
