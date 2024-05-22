@@ -1,0 +1,56 @@
+________________________________________________________________________________________________________________________
+FILE: ..\media\sandbox-options.txt
+
+	VERSION = 1,
+
+	option MySandboxVars.Enabled
+	{
+		type = boolean,
+		default = true,
+		page = MySandboxVars,
+		translation = Enabled_tooltip,
+	}
+
+	option MySandboxVars.MaxDistance
+	{
+		type = integer,
+		default = 42,
+		min = 1,
+		max = 1000,
+		page = MySandboxVars,
+		translation = MaxDistance_tooltip,
+	}
+________________________________________________________________________________________________________________________
+FILE: ..\media\lua\shared\Translate\EN\sandbox_EN.txt
+
+	Sandbox_EN = {
+
+	    Sandbox_MySandboxVars = "Sandbox Variables test",
+
+	    Sandbox_MySandboxVars_Enabled = "Boolean value",
+	    Sandbox_MySandboxVars_Enabled_tooltip = "To check or not to check",
+
+	    Sandbox_MySandboxVars_MaxDistance = "An integer value",
+	    Sandbox_MySandboxVars_MaxDistance_tooltip = "Enter a number between 1 and 1000",
+
+	}
+________________________________________________________________________________________________________________________
+
+FILE: ..\media\lua\client\ClientsideStuff.lua
+
+	local function fShowSandboxVars()
+
+		if SandboxVars.MySandboxVars.Enabled == true then
+			getPlayer():addLineChatElement("Bool value == true" , 0.2 , 0.8 , 0.9);
+		end
+
+		if SandboxVars.MySandboxVars.MaxDistance >= 100 then
+			getPlayer():addLineChatElement("Integer value > 100" , 0.3 , 0.8 , 0.2);
+		end
+
+	end
+
+	Events.EveryOneMinute.Add(fShowSandboxVars);
+	Events.OnPlayerMove.Add(fShowSandboxVars);
+________________________________________________________________________________________________________________________
+
