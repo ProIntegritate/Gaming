@@ -52,4 +52,4 @@ ________________________________________________________________________________
 	Events.EveryOneMinute.Add(fShowSandboxVars);
 	Events.OnPlayerMove.Add(fShowSandboxVars);
 ________________________________________________________________________________________________________________________
-4. Modify the files how you want to, then it should look something like what is shown in pz.sandboxvars.png
+4. Modify the files how you want to, then it should look something like what is shown in howto.sandboxvars.png
