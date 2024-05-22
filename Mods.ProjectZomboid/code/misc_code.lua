@@ -50,6 +50,9 @@
 	local dawn = GameTime:getInstance():getDawn();		-- Dawn hour, seem to be 12 (?)
 	local dusk = GameTime:getInstance():getDusk();		-- Dush hour, seem to be 3 (?)
 
+	-- System (Real world) time
+	local sTimestamp = os.date("%Y-%m-%d %H:%M:%S"); 	-- format: YYYY-MM-DD HH:MM:SS
+
 
 	-- ******** Add an item to the players inventory ********
 	local inventory = getPlayer():getInventory();
