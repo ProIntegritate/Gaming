@@ -7,9 +7,9 @@
 	-- etc...
 
 
-	-- ******** Show text on screen (above character) ********
+	-- ******** Show text on screen (above character), Clientside only! ********
 	getPlayer():addLineChatElement("Hello world!", 0.6 , 0.7 , 0.1); -- text + r g b values
-	character:Say("This statement is said by the character"); -- This is for clientside mods as "character" is VERY clientside specific.
+	character:Say("This statement is said by the character");
 
 
 	-- ******** Get Player position in world ********
