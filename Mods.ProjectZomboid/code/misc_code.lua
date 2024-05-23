@@ -82,7 +82,7 @@
 	-- you could do if A > 0 and A < 0, but that is just silly.
 
 
-	-- ******** Number of days since world creation ********
+	-- ******** Number of days since start of Zombie epidemic broke out ********
 	local daysSinceStart = math.floor(GameTime:getInstance():getWorldAgeHours() / 24);	-- Days since start.
 
 
