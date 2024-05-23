@@ -1,3 +1,5 @@
+--Project Zomboid Luascript code snippets
+
 
 	-- ******** Get Random numbers ********
 	n = ZombRand(3); -- Will assign a number between 0 and 2 to n.
