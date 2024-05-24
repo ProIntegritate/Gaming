@@ -86,3 +86,15 @@
 	local daysSinceStart = math.floor(GameTime:getInstance():getWorldAgeHours() / 24);	-- Days since start.
 
 
+	-- ******** Do modulo (%) calculation ********
+	local iFoo = 5%3;	-- = 5 Modulo 3 = 2
+
+
+	-- ******** Access Sandbox variables ********
+	SandboxVars.Modname.Variablename -- Can be any type: String, Integer, Double(float)
+
+
+	-- ******** Handle Moddata on object (Supported by most ISOObjects) ********
+	local zModData = zombie:getModData();
+	if not zModData.variablename then zModData.variablename = "Banana" end;	-- Creates and Stores variable and it's data.
+
