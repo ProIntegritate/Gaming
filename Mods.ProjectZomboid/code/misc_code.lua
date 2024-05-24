@@ -98,3 +98,9 @@
 	local zModData = zombie:getModData();
 	if not zModData.variablename then zModData.variablename = "Banana" end;	-- Creates and Stores variable and it's data.
 
+
+	-- ******** Check if a specific mod is installed ********
+	if getActivatedMods():contains("Modname") then
+		-- Modname is installed, do stuff
+	end
+
