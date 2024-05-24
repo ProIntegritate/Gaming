@@ -71,7 +71,7 @@
 	-- This should be put on the first line in the luascript file.	
 	-- The reverse also works if you want to check for server.
 	-- You just need one of these statements, so this is for demo purposes only.
-	if not isServer() or isClient() then return end
+	if not isServer() or isClient() then return end; -- Return and exit function
 
 
 	-- ******** Check if a variable is NOT like something ********
@@ -91,7 +91,7 @@
 
 
 	-- ******** Access Sandbox variables ********
-	SandboxVars.Modname.Variablename -- Can be any type: String, Integer, Double(float)
+	local ZombieCountToSpawn = SandboxVars.Modname.iZombieCount; -- Can be any type: String, Integer, Double(float)
 
 
 	-- ******** Handle Moddata on object (Supported by most ISOObjects) ********
