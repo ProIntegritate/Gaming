@@ -53,3 +53,48 @@ ________________________________________________________________________________
 	Events.OnPlayerMove.Add(fShowSandboxVars);
 ________________________________________________________________________________________________________________________
 4. Modify the files how you want to, then it should look something like what is shown in howto.sandboxvars.png
+
+Additional:
+
+Float values can be specified by Double:
+
+	option MySandboxVars.MaxDistance
+	{
+		type = double,
+		default = 0.55,
+		min = 0.33,
+		max = 0.99,
+		page = MySandboxVars,
+		translation = xxx_tooltip,
+	}
+
+Enum values (dropdown multilist) can be specificed by enum:
+
+	option MySandboxVars.PercentageSelector
+	{
+		type = enum,
+		numValues = 9,
+		default = 1,
+		page = MySandboxVars,
+		translation = PercentageSelector_tooltip,
+	}
+
+Default in an Enum structure means which option value was specifieds, these are specified in the ..\media\lua\shared\Translate\EN\sandbox_EN.txt file:
+
+	Sandbox_PercentageSelector = "An percentage integer value",
+	Sandbox_PercentageSelector_tooltip = "Select percentage",
+	Sandbox_PercentageSelector_option1 = "10",
+	Sandbox_PercentageSelector_option2 = "20",
+	Sandbox_PercentageSelector_option3 = "30",
+	Sandbox_PercentageSelector_option4 = "40",
+	Sandbox_PercentageSelector_option5 = "50",
+	Sandbox_PercentageSelector_option6 = "60",
+	Sandbox_PercentageSelector_option7 = "70",
+	Sandbox_PercentageSelector_option8 = "80",
+	Sandbox_PercentageSelector_option9 = "90",
+
+Note that the number of options has to be as many as specified in the numValues option under option MySandboxVars.PercentageSelector.
+
+Finally a warning for Build 41: If you specify a default value outside of the min= and max= values, the game will crash to desktop.
+
+Good luck.
