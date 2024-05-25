@@ -95,7 +95,7 @@ Enum values (dropdown multilist) can be specificed by enum:
 	Sandbox_PercentageSelector_option8 = "80",
 	Sandbox_PercentageSelector_option9 = "90",
 
-Note that the number of options has to be as many as specified in the numValues option under option MySandboxVars.PercentageSelector.
+	Note that the number of options has to be as many as specified in the numValues option under option MySandboxVars.PercentageSelector.
 
 Finally a warning for Build 41: If you specify a default value outside of the min= and max= values, the game will crash to desktop.
 
