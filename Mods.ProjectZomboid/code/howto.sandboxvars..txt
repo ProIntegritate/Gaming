@@ -58,7 +58,7 @@ ________________________________________________________________________________
 
 **** Additional: ****
 
-Float values can also be specified by Double:
+Float values can also be specified by "double":
 
 	option MySandboxVars.SomethingFloaty
 	{
@@ -81,7 +81,7 @@ Enum values (dropdown multilist) can be specificed by enum:
 		translation = PercentageSelector_tooltip,
 	}
 
-Default in an Enum structure means which option value was specifieds, these are specified in the ..\media\lua\shared\Translate\EN\sandbox_EN.txt file:
+	Default value in an Enum structure means which option value was specifieds, these are specified in the ..\media\lua\shared\Translate\EN\sandbox_EN.txt file:
 
 	Sandbox_PercentageSelector = "An percentage integer value",
 	Sandbox_PercentageSelector_tooltip = "Select percentage",
