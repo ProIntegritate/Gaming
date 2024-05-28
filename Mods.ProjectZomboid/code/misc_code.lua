@@ -104,3 +104,7 @@
 		-- Modname is installed, do stuff
 	end
 
+
+	-- ******** Gets localised string from definition file ********
+	local Stringname = getText("ID_From_\shared\Translate\EN\IG_UI_EN.txt");
+
