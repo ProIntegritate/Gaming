@@ -108,3 +108,11 @@
 	-- ******** Gets localised string from definition file ********
 	local Stringname = getText("ID_From_\shared\Translate\EN\IG_UI_EN.txt");
 
+
+	-- ******** String replace and escape characters ********
+	local stringname = "'FOOBAR_VALUE'";
+	stringname = stringname:gsub("FOOBAR_VALUE", "12345");
+	stringname = stringname:gsub("'", "\"");
+	--stringname is now "12345"
+
+
