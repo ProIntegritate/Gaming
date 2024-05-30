@@ -65,6 +65,9 @@
 	if something == "bad" then
 		return
 	end
+	-- or a oneliner
+	if something == "bad" then return end;
+
 
 
 	-- ******** disable entire luascript file if clientside ********
