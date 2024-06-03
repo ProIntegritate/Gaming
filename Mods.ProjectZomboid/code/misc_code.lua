@@ -119,3 +119,6 @@
 	--stringname is now "12345"
 
 
+	-- ******** Exit a for-next loop ********
+	break;
+
