@@ -122,3 +122,12 @@
 	-- ******** Exit a for-next loop ********
 	break;
 
+
+	-- ******** Loop through an item container, returning an (inventory)item object ********
+	local itemContainer = getPlayer():getInventory();
+	local items = itemContainer:getItems();
+	for i = 0, items:size() -1, 1
+	do
+		local item = items:get(i); -- item to do stuff with. Check docs for properties/methods
+	end
+
