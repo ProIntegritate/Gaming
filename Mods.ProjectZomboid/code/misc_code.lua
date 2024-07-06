@@ -131,3 +131,17 @@
 		local item = items:get(i); -- item to do stuff with. Check docs for properties/methods
 	end
 
+
+	-- ******** Check if player has an item and it is equipped ********
+	local itemContainer = getPlayer():getInventory();
+	local items = itemContainer:getItems();
+	for i = 0, items:size() -1, 1
+	do
+		local item = items:get(i);
+		if item:getFullType() == "base.Belt" then -- Check if player has Belt in inventory
+			if item:isEquipped() then -- Check if player has Belt equipped
+				-- do stuff here
+			end      
+		end
+	end
+
